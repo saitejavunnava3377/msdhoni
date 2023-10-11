@@ -1,0 +1,103 @@
+<html>
+    <head>
+    <title>centering elements</title>
+        <script src="main.js"></script>
+        
+         </head>
+    <body>
+        <center>
+        <header>
+            <h1 style="background-color:green">
+                MS DHONI
+            
+            </h1>
+        </header>
+            
+            
+        <div class="main">
+        
+            <p style="background-color:bisque">Mahendra Singh Dhoni (/məˈheɪndrə ˈsɪŋ dhæˈnɪ/ ⓘ; born 7 July 1981) is an Indian professional cricketer, who plays as a wicket-keeper-batsman. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He plays for and captains Chennai Super Kings franchise in the Indian Premier League.</p>
+            <br>
+            <img src="msd.webp">
+            <button  onclick="change()" id="btn" >click me</button>
+            <br>
+            <label id="label1"></label>
+        </div>
+            </center>
+        </body>
+        <style>
+            .main{  
+                width:900px;
+                height:800px;
+                border:2px solid red;
+                
+            }
+            
+            button{
+                
+                position: absolute;
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                justify-content: center;
+            
+                top:450;
+                left:800;
+                transform: translate(-50%,-50%);
+            }
+            label{
+                position:absolute;
+                font-size:40px;
+                color:darkblue;
+                top:510;
+                left:800;
+                transform: translate(-50%,-50%);
+            }
+            body{
+                
+                
+            }
+            img{
+                width:100%;
+                height: 100%;
+            }
+            @media screen and (max-width: 700px) {
+                button {
+                    width:150px;
+                    height: 50px;
+                    
+                    
+                }
+                label{
+                     width:150px;
+                    height: 50px;
+                    
+                }
+                body{
+                    background-color:blueviolet;
+                }
+                
+                
+            }
+            @media screen and (min-width:701px) and (max-width: 1200px){
+                button {
+                    width: 250px;
+                    height: 100px;
+                    background-color: violet;
+                    
+                }
+                label{
+                     width: 250px;
+                    height: 100px;
+                    top:600;
+                    left:800;
+                    
+                }
+                body{
+                    background-color:orange;
+                }
+            }
+        </style>
+   
+</html>
